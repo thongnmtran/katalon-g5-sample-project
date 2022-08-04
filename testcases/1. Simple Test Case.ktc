@@ -1,6 +1,6 @@
-import { project, web } from 'katalon';
+import katalon from "katalon";
 
-export default project.testCase("Simple Test Case", async (local) => {
+export default katalon.testCase("Simple Test Case", async ({ local, web }) => {
   await web.openBrowser("https://katalon-demo-cura.herokuapp.com/");
 
   await web.click("id=btn-make-appointment");
