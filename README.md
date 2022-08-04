@@ -1,0 +1,1 @@
+# katalon-g5-sample-project
