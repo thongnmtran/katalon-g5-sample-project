@@ -26,6 +26,6 @@ export default katalon.testCase(
 
     await web.click("id=" + loginButton);
 
-    //await web.closeBrowser();
+    await web.closeBrowser();
   }
 );
