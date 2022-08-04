@@ -1,7 +1,7 @@
 import { project, web } from 'katalon';
 import moment from 'moment';
 
-project.testCase("My First Test Casae", async (local) => {
+export default project.testCase("My First Test Casae", async (local) => {
   console.log("> Now:", moment());
 
   console.log("> local:", local);
