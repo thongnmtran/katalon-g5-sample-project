@@ -1,5 +1,5 @@
 import katalon from "katalon";
-import {  } from '../keywords/keyword-1.js';
+import { myFirstKeyword } from "../keywords/keyword-1.js";
 
 export default katalon.testCase("Simple Test Case", async ({ local, web }) => {
   await web.openBrowser("https://katalon-demo-cura.herokuapp.com/");
@@ -10,5 +10,5 @@ export default katalon.testCase("Simple Test Case", async ({ local, web }) => {
 
   await web.closeBrowser();
 
-  await myFirstKeyword
+  await myFirstKeyword(1, "2", "a");
 });

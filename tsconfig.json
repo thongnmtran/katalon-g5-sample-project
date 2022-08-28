@@ -1,10 +1,14 @@
 {
+  "include": [
+    "."
+  ],
   "compilerOptions": {
+    "rootDir": ".",
     "target": "ESNext",
     "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node",
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
@@ -12,8 +16,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "katalon": [
-        "./lib/katalon"
+      "katalon/*": [
+        "lib/katalon/*"
       ]
     }
   }
