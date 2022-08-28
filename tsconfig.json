@@ -10,5 +10,11 @@
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "katalon": [
+        "./lib/katalon"
+      ]
+    }
   }
 }
