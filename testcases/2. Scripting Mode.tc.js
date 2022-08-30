@@ -1,31 +1,12 @@
 import katalon from "katalon";
-import moment from "moment";
 
-export default katalon.testCase(
-  "My First Test Casae",
-  async ({ local, web }) => {
-    console.log("> Now:", moment());
-
-    console.log("> local:", local);
-
-    const url = "https://katalon-demo" + "-cura.herokuapp.com/";
-
-    console.log("> url:", url);
-
-    await web.openBrowser(url);
-
-    local.url = url;
-
-    await web.click("id=btn-make-appointment");
-
-    console.log(local);
-
-    const loginButton = url.includes("katalon")
-      ? "btn-login"
-      : "btn-make-appointment";
-
-    await web.click("id=" + loginButton);
-
-    await web.closeBrowser();
-  }
-);
+export default katalon.testCase("New Test Case", async ({ local, web }) => {
+  await web.openBrowser("https://katalon-demo-cura.herokuapp.com/");
+  await web.click("css=#btn-make-appointment");
+  await web.click("css=#login");
+  await web.click("css=#login .row");
+  await web.click('css=[data-gr-ext-installed=""]');
+  await web.click("css=#login .row");
+  await web.click("css=#login .row");
+  await web.closeBrowser();
+});

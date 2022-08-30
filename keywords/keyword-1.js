@@ -17,5 +17,3 @@ export function myFirstKeyword(numberValue, stringValue, enumValue) {
 export function mySecondKeyword(numberValue, stringValue, enumValue) {
   console.log("> My First Keyword:", numberValue, stringValue, enumValue);
 }
-
-myFirstKeyword()
