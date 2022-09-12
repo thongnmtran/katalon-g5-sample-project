@@ -1,7 +1,9 @@
+/**
+ * @name web
+ */
 export interface WebEngine {
   /**
    * Open a new browser with a specific url
-   * @object web
    * @param url The target url
    * @template default Open a new window with ${url}
    * @template _ Open ${url} in a new window
